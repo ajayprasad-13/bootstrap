@@ -14,60 +14,133 @@
   </head>
   <body class="p-5">
     <div>
-
-        <!-- tabs  -->
-        <div>
-            <ul class="nav nav-tabs">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Today's Engagement</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Future Engagement</a>
-                </li>
-                
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Total Engagement</a>
-                </li>
-            </div>
-            <!-- content container -->
-            <div class="card py-5 mt-5 shadow-lg bg-body border-start border-primary border-4 border-top-0 border-end-0 border-bottom-0">
-                <div class=" d-flex justify-content-between">
-                    <p class="ms-5">ID: 217 </p>
-                    <div class="me-5">
-
-                        <button type="button" class="btn btn-outline-primary text-muted p-1">Live in office</button>
-                        <button type="button" class="btn btn-outline-warning text-muted p-1">Awating TTL Approval</button>
-                    </div>
-                </div>
-                <div>
-                    <p class="fw-bold ms-5 mt-3">
-
-                        Unbranded Speaker Presentation +2
-                    </p>
-                </div>
-                <div class="ms-5">
-                    <p class="text-secondary mb-0">SHIONGI > Fetroja&reg (celfiderocol)<sup class="text-danger">SI</sup></p>
-                </div>
-                <hr class="mx-5 text-secondary"/>
-                            <!-- bottom content container -->
-            <div class="mx-5 d-flex justify-content-between">
-                <div>
-                    <p class="fw-bold m-0">EO: <span class="fw-normal">Sean Gully</span></p>
-                    <p class="fw-bold m-0">Speaker: <span class="fw-normal">Malai Appan, Christoper Cooper</span></p>
-                    <p class="text-secondary m-0">Attendees Invited: 1</p>
-                    <p class="m-0 fw-bold">Attendees Confirmed: <span class="fw-normal">0</span></p>
-                </div>
-                <div>  
-                    <button type="button" class="btn btn-secondary">Time Zone Review</button>
-                    <p class="text-secondary m-0">May 6, 2025</p>
-                    <p class="text-secondary m-0">6:00 AM ET</p>
-                </div>
-            </div>
-            </div>
-
-            
+      <!-- tabs  -->
+      <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <button
+            class="nav-link active"
+            id="nav-today-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-today"
+            type="button"
+            role="tab"
+            aria-controls="nav-today"
+            aria-selected="true"
+          >
+            Today's Engagement
+          </button>
+          <button
+            class="nav-link"
+            id="nav-future-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-future"
+            type="button"
+            role="tab"
+            aria-controls="nav-future"
+            aria-selected="false"
+          >
+            Future Engagement
+          </button>
+          <button
+            class="nav-link"
+            id="nav-total-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-total"
+            type="button"
+            role="tab"
+            aria-controls="nav-total"
+            aria-selected="false"
+          >
+            Total Engagement
+          </button>
         </div>
-        
-
+      </nav>
+      <!-- content container -->
+      <div class="tab-content" id="nav-tabContent">
+        <div
+          class="tab-pane fade show active"
+          id="nav-today"
+          role="tabpanel"
+          aria-labelledby="nav-today-tab"
+          tabindex="0"
+        >
+          <div
+            class="card py-5 mt-5 shadow-lg bg-body border-start border-primary border-4 border-top-0 border-end-0 border-bottom-0"
+          >
+            <div class="d-flex justify-content-between">
+              <p class="ms-5">ID: 217</p>
+              <div class="me-5">
+                <button
+                  type="button"
+                  class="btn btn-outline-primary text-muted p-1"
+                >
+                  Live in office
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-warning text-muted p-1"
+                >
+                  Awating TTL Approval
+                </button>
+              </div>
+            </div>
+            <div>
+              <p class="fw-bold ms-5 mt-3">Unbranded Speaker Presentation +2</p>
+            </div>
+            <div class="ms-5">
+              <p class="text-secondary mb-0">
+                SHIONGI > Fetroja&reg (celfiderocol)<sup class="text-danger"
+                  >SI</sup
+                >
+              </p>
+            </div>
+            <hr class="mx-5 text-secondary" />
+            <!-- bottom content container -->
+            <div class="mx-5 d-flex justify-content-between">
+              <div>
+                <p class="fw-bold m-0">
+                  EO: <span class="fw-normal">Sean Gully</span>
+                </p>
+                <p class="fw-bold m-0">
+                  Speaker:
+                  <span class="fw-normal">Malai Appan, Christoper Cooper</span>
+                </p>
+                <p class="text-secondary m-0">Attendees Invited: 1</p>
+                <p class="m-0 fw-bold">
+                  Attendees Confirmed: <span class="fw-normal">0</span>
+                </p>
+              </div>
+              <div>
+                <button type="button" class="btn btn-secondary">
+                  Time Zone Review
+                </button>
+                <p class="text-secondary m-0">May 6, 2025</p>
+                <p class="text-secondary m-0">6:00 AM ET</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Future engagement container -->
+        <div
+          class="tab-pane fade"
+          id="nav-future"
+          role="tabpanel"
+          aria-labelledby="nav-future-tab"
+          tabindex="0"
+        >
+          This is Future Engagement
+        </div>
+        <!-- Total Engagement container -->
+        <div
+          class="tab-pane fade"
+          id="nav-total"
+          role="tabpanel"
+          aria-labelledby="nav-total-tab"
+          tabindex="0"
+        >
+          This is Total Engagement
+        </div>
+      </div>
+    </div>
   </body>
 </html>
